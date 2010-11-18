@@ -1,0 +1,11 @@
+Use this package to execute shell commands from within the programs
+you have so defiantly not written in Python or Ruby.  Calling
+SHELLSHOCK:ARM will set #! as a macro character, so you can write
+shell commands in your program without any hyper-quoting.  From #! to
+the end of the line will be replaced with a closure that runs that
+shell command exactly, collecting stdout and stderr into a string.
+
+Heaven help you if the child process wants input, hangs, or if
+anything at all goes wrong.
+
+There's an .asd file.  You know what to do.
